@@ -23,14 +23,15 @@ export default function FeaturedProducts() {
 
     return (
         <motion.section
-            className="lg:max-w-7xl lg:mx-auto mb-20 mx-4"
+            className="lg:max-w-7xl lg:mx-auto mb-20 mx-4 lg:mt-20 mt-16 scroll-mt-24"
+            id="product"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }} // ✅ animasi hanya sekali saat pertama scroll
         >
             <motion.div
-                className="flex justify-between items-center mb-6 lg:mt-20 mt-16"
+                className="flex justify-between items-center mb-6"
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}

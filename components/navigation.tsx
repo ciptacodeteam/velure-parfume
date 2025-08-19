@@ -14,10 +14,10 @@ import { useEffect } from "react";
 
 const navigationLinks = [
     { name: "Home", href: "/" },
-    { name: "Parfume", href: "/parfume" },
-    { name: "Features", href: "/features" },
-    { name: "Marketplace", href: "/faq" },
-    { name: "Testimonial", href: "/testimonial" },
+    { name: "Parfume", href: "#product" },
+    { name: "Features", href: "#features" },
+    { name: "Marketplace", href: "https://linktr.ee/velureperfume" },
+    { name: "Testimonial", href: "#testimonial" },
     { name: "WhatsApp", href: "https://wa.me/6282184267456" },
 ];
 
@@ -104,23 +104,26 @@ export default function NavigationSection() {
                         <AnimatePresence>
                             {open && (
                                 <DisclosurePanel static className="sm:hidden fixed inset-0 z-40">
-                                    <motion.div
-                                        initial={{ y: "-100%" }}
-                                        animate={{ y: 0 }}
-                                        exit={{ y: "-100%" }}
-                                        transition={{ duration: 0.3, ease: "easeInOut" }}
-                                        className="bg-white pt-32 flex flex-col px-6 space-y-6 h-full"
-                                    >
-                                        {navigationLinks.map((item) => (
-                                            <Link
-                                                key={item.name}
-                                                href={item.href}
-                                                className="text-2xl font-semibold text-gray-800 hover:text-[#BB7D32]"
-                                            >
-                                                {item.name}
-                                            </Link>
-                                        ))}
-                                    </motion.div>
+                                    {({ close }) => (
+                                        <motion.div
+                                            initial={{ y: "-100%" }}
+                                            animate={{ y: 0 }}
+                                            exit={{ y: "-100%" }}
+                                            transition={{ duration: 0.3, ease: "easeInOut" }}
+                                            className="bg-white pt-32 flex flex-col px-6 space-y-6 h-full"
+                                        >
+                                            {navigationLinks.map((item) => (
+                                                <Link
+                                                    key={item.name}
+                                                    href={item.href}
+                                                    onClick={() => close()} // ✅ Tutup menu saat klik
+                                                    className="text-2xl font-semibold text-gray-800 hover:text-[#BB7D32]"
+                                                >
+                                                    {item.name}
+                                                </Link>
+                                            ))}
+                                        </motion.div>
+                                    )}
                                 </DisclosurePanel>
                             )}
                         </AnimatePresence>

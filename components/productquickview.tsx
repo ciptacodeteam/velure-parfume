@@ -40,7 +40,7 @@ export default function ProductQuickView({ open, setOpen, product }: Props) {
                         >
                             <button
                                 onClick={() => setOpen(false)}
-                                className="absolute top-3 right-3 sm:top-4 sm:right-4 text-gray-500 hover:text-gray-700 p-2"
+                                className="absolute top-3 right-3 sm:top-4 sm:right-4 text-gray-500 hover:text-gray-700 p-2 cursor-pointer"
                             >
                                 <XMarkIcon className="w-6 h-6" />
                             </button>
@@ -80,7 +80,7 @@ export default function ProductQuickView({ open, setOpen, product }: Props) {
                                         </p>
                                     </div>
 
-                                    <Link href="">
+                                    <Link href="https://linktr.ee/velureperfume">
                                         <button className="mt-6 w-full bg-[#214a55] text-white py-3 rounded-md hover:bg-[#214a55]/95">
                                             Checkout
                                         </button>

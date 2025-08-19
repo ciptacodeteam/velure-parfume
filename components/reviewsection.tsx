@@ -39,52 +39,56 @@ function classNames(...classes: string[]) {
 
 export default function ReviewSection() {
     return (
-        <div className="lg:max-w-7xl lg:mx-auto mx-4 mb-20">
-            <div>
-                <h2 id="reviews-heading" className="sr-only text-black">
-                    Reviews
-                </h2>
+        <>
+            <section className='scroll-mt-24' id='testimonial'>
+                <div className="lg:max-w-7xl lg:mx-auto mx-4 mb-20">
+                    <div>
+                        <h2 id="reviews-heading" className="sr-only text-black">
+                            Reviews
+                        </h2>
 
-                <div className='flex flex-col justify-center items-center lg:mb-12 mb-6'>
-                    <h1 className='font-cormorant lg:text-5xl text-4xl font-bold mb-4 text-[#BB7D32]'>What They Love In Our Products</h1>
-                    <p className='lg:w-1/3 lg:text-center lg:text-sm text-gray-500'>we are committed to delivering the very best to meet your needs and exceed your expectations.</p>
-                </div>
+                        <div className='flex flex-col justify-center items-center lg:mb-12 mb-6'>
+                            <h1 className='font-cormorant lg:text-5xl text-4xl font-bold mb-4 text-[#BB7D32]'>What They Love In Our Products</h1>
+                            <p className='lg:w-1/3 lg:text-center lg:text-sm text-gray-500'>we are committed to delivering the very best to meet your needs and exceed your expectations.</p>
+                        </div>
 
-                <div className="lg:grid lg:grid-cols-3 lg:gap-6 space-y-4 lg:space-y-0">
-                    {reviews.map((review) => (
-                        <div key={review.id} className="flex flex-col sm:flex-row border border-gray-200 rounded-lg p-8">
-                            <div className="order-2 mt-6 sm:mt-0 sm:ml-12">
-                                <p className="sr-only">{review.rating} out of 5 stars</p>
+                        <div className="lg:grid lg:grid-cols-3 lg:gap-6 space-y-4 lg:space-y-0">
+                            {reviews.map((review) => (
+                                <div key={review.id} className="flex flex-col sm:flex-row border border-gray-200 rounded-lg p-8">
+                                    <div className="order-2 mt-6 sm:mt-0 sm:ml-12">
+                                        <p className="sr-only">{review.rating} out of 5 stars</p>
 
-                                <div
-                                    dangerouslySetInnerHTML={{ __html: review.content }}
-                                    className="space-y-6 text-sm text-gray-600"
-                                />
-                            </div>
+                                        <div
+                                            dangerouslySetInnerHTML={{ __html: review.content }}
+                                            className="space-y-6 text-sm text-gray-600"
+                                        />
+                                    </div>
 
-                            <div className="order-1 flex items-center sm:flex-col sm:items-start">
-                                <img alt={`${review.author}.`} src={review.avatarSrc} className="size-12 rounded-full" />
+                                    <div className="order-1 flex items-center sm:flex-col sm:items-start">
+                                        <img alt={`${review.author}.`} src={review.avatarSrc} className="size-12 rounded-full" />
 
-                                <div className="ml-4 sm:mt-4 sm:ml-0">
-                                    <p className="text-sm font-medium text-gray-900">{review.author}</p>
-                                    <div className="mt-2 flex items-center">
-                                        {[0, 1, 2, 3, 4].map((rating) => (
-                                            <StarIcon
-                                                key={rating}
-                                                aria-hidden="true"
-                                                className={classNames(
-                                                    review.rating > rating ? 'text-yellow-500' : 'text-gray-200',
-                                                    'size-5 shrink-0',
-                                                )}
-                                            />
-                                        ))}
+                                        <div className="ml-4 sm:mt-4 sm:ml-0">
+                                            <p className="text-sm font-medium text-gray-900">{review.author}</p>
+                                            <div className="mt-2 flex items-center">
+                                                {[0, 1, 2, 3, 4].map((rating) => (
+                                                    <StarIcon
+                                                        key={rating}
+                                                        aria-hidden="true"
+                                                        className={classNames(
+                                                            review.rating > rating ? 'text-yellow-500' : 'text-gray-200',
+                                                            'size-5 shrink-0',
+                                                        )}
+                                                    />
+                                                ))}
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            ))}
                         </div>
-                    ))}
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </>
     )
 }
