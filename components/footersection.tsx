@@ -18,7 +18,7 @@ const navigation = {
     company: [
         { name: 'Home', href: '/' },
         { name: 'Features', href: '#features' },
-        { name: 'perfume', href: '#product' },
+        { name: 'Perfume', href: '#product' },
         { name: 'Testimonial', href: '#testimonial' },
     ],
     social: [
