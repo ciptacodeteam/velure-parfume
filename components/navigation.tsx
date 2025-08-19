@@ -14,7 +14,7 @@ import { useEffect } from "react";
 
 const navigationLinks = [
     { name: "Home", href: "/" },
-    { name: "Parfume", href: "#product" },
+    { name: "Perfume", href: "#product" },
     { name: "Features", href: "#features" },
     { name: "Marketplace", href: "https://linktr.ee/velureperfume" },
     { name: "Testimonial", href: "#testimonial" },

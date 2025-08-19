@@ -18,7 +18,7 @@ const navigation = {
     company: [
         { name: 'Home', href: '/' },
         { name: 'Features', href: '#features' },
-        { name: 'Parfume', href: '#product' },
+        { name: 'perfume', href: '#product' },
         { name: 'Testimonial', href: '#testimonial' },
     ],
     social: [
@@ -143,7 +143,7 @@ export default function FooterSection() {
                     </div>
                 </div>
                 <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-10">
-                    <p className="text-sm/6 text-gray-600">&copy;{new Date().getFullYear()} Velure Parfume. All rights reserved.</p>
+                    <p className="text-sm/6 text-gray-600">&copy;{new Date().getFullYear()} Velure Perfume. All rights reserved.</p>
                 </div>
             </div>
         </footer>

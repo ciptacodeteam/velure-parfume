@@ -42,7 +42,7 @@ export default function FeaturedSection() {
                                                 strokeWidth={1.5}
                                                 className="mb-2 lg:h-16 lg:w-16 h-24 w-24"
                                             />
-                                            <h1 className="text-white lg:text-sm text-base">High Quality Parfume</h1>
+                                            <h1 className="text-white lg:text-sm text-base">High Quality perfume</h1>
                                         </div>
                                     </div>
                                 </div>

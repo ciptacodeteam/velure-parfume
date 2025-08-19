@@ -17,8 +17,8 @@ const cormorantGaramond = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: {
-    default: "Velure Parfume – Premium Fragrances for Every Moment",
-    template: "Velure Parfume Collection | Velure",
+    default: "Velure perfume – Premium Fragrances for Every Moment",
+    template: "Velure perfume Collection | Velure",
   },
   description:
     "Velure is crafted to embody everlasting sophistication, delivering a luxurious fragrance that captivates from the very first note. Each spray reveals confidence, charm, and a lasting impression that lingers beautifully.",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     canonical: "https://velureperfume.store",
   },
   openGraph: {
-    title: "Velure Parfume – Premium Fragrances for Every Moment",
+    title: "Velure Perfume – Premium Fragrances for Every Moment",
     description:
       "Velure is crafted to embody everlasting sophistication, delivering a luxurious fragrance that captivates from the very first note. Each spray reveals confidence, charm, and a lasting impression that lingers beautifully.",
     url: "https://velureperfume.store",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
         url: "/img/img1.webp",
         width: 1200,
         height: 630,
-        alt: "velureparfume",
+        alt: "velureperfume",
       },
     ],
     locale: "id_ID",
