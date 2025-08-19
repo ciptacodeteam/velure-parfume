@@ -15,7 +15,7 @@ export default function FeaturedSection() {
                         <div className="lg:w-1/2">
                             <div className="lg:flex lg:grid-cols-3 lg:gap-4 lg:ustify-between space-y-12 lg:space-y-0">
                                 <div className="w-full">
-                                    <div className="justify-items-center">
+                                    <div className="flex flex-col justify-center items-center">
                                         <Box
                                             color="white"
                                             strokeWidth={1.5}
@@ -25,7 +25,7 @@ export default function FeaturedSection() {
                                     </div>
                                 </div>
                                 <div className="w-full">
-                                    <div className="justify-items-center">
+                                    <div className="flex flex-col justify-center items-center">
                                         <Users
                                             color="white"
                                             strokeWidth={1.5}
@@ -35,7 +35,7 @@ export default function FeaturedSection() {
                                     </div>
                                 </div>
                                 <div className="w-full">
-                                    <div className="justify-items-center">
+                                    <div className="flex flex-col justify-center items-center">
                                         <PackageCheck
                                             color="white"
                                             strokeWidth={1.5}
