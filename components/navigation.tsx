@@ -116,7 +116,7 @@ export default function NavigationSection() {
                                                 <Link
                                                     key={item.name}
                                                     href={item.href}
-                                                    onClick={() => close()} // ✅ Tutup menu saat klik
+                                                    onClick={() => close()}
                                                     className="text-2xl font-semibold text-gray-800 hover:text-[#BB7D32]"
                                                 >
                                                     {item.name}
