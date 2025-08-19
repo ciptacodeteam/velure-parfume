@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     default: "Velure perfume – Premium Fragrances for Every Moment",
     template: "Velure perfume Collection | Velure",
   },
+  verification: {
+    google: "0gitakrthBAtl4mkFRdSrybY2PU_UEwFG6bSEwqB_ME",
+  },
   description:
     "Velure is crafted to embody everlasting sophistication, delivering a luxurious fragrance that captivates from the very first note. Each spray reveals confidence, charm, and a lasting impression that lingers beautifully.",
   keywords: [
